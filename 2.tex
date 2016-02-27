@@ -1,0 +1,44 @@
+\documentclass[utf8]{ctexart}
+\pagestyle{headings}
+\markright{数学竞赛第二次辅导}
+\usepackage[a4paper, left=2.3cm, right=2.3cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\tk}[1][1.5]{\mbox{\underline{\hspace{#1 cm}}}}
+\begin{document}
+\begin{enumerate}
+   \item 设$f(x)$在$x_0$可导, $\{\alpha_n\}$和$\{\beta_n\}$为收敛为$0$的正项数列.求:
+      \[
+	 \lim_{n\rightarrow\infty}\frac{f(x_0+\alpha_n)-f(x_0-\beta_n)}{\alpha_n+\beta_n}
+      \]
+   \item 设函数$f(x)$满足$f(0)=0$且$f'(0)$存在.求:
+      \[
+	 \lim_{n\rightarrow\infty}[f(\frac{1}{n^2})+f(\frac{2}{n^2})+\cdots+f(\frac{n}{n^2})]
+      \]
+   \item 设函数$f(x)$具有连续的二阶导数, 且$xf''(x)+3x{[f'(x)]}^2=1-{\mathrm{e}}^{-x}$, 若$x_0$和$0$都是它的极值点.则它们是极大值还是极小值?
+   \item 设$f(x)$在$(0, 1)$具有连续导数, 且$\lim\limits_{x\rightarrow a^+}f(x)=+\infty\text{以及}\lim\limits_{x\rightarrow b^-}f(x)%
+      =-\infty$.\newline
+      $\forall x\in(a, b), f'(x)+f^2(x)\geqslant-1$, 则问$b-a$与$\mathrm{\pi}$的大小关系.
+   \item 设$a>0, b>0$.证明:
+      \[
+	 2ab\leqslant e^{a-1}+a\ln a+e^{b-1}+b\ln b
+      \]
+   \item 设有实数$a_1, a_2, \ldots, a_n$, 其中$a_1<a_2<\cdots<a_n$.函数$f(x)$在$[a_1, a_n]$上有$n$阶导数, 且$f(a_1)=f(a_2)=\cdots=f(a_n)=0$.证:
+      \[
+	 \forall c\in[a_1, a_n], \text{存在}\xi\text{使得}f(c)=\frac{(c-a_1)(c-a_2)\cdots(c-a_n)}{n!}f^{(n)}(\xi)
+      \]
+   \item 已知$\varphi(x)$可导, $\varphi(0)=0$, $\varphi'(x)$单调递减.
+      \begin{enumerate}
+	 \item $\forall x\in(0, 1), \varphi(1)x<\varphi(x)<\varphi'(0)x$.
+	 \item 若$\varphi(1)\geqslant 0, \varphi'(0)\leqslant 1, \forall x_0\in(0, 1), x_n=\varphi(x_{n-1})$.求$\lim\limits_{n\rightarrow\infty}x_n$.
+      \end{enumerate}
+   \item 设函数$f(x)$在$[-2, 2]$二阶可导, $\lvert f(x)\lvert\leqslant 1, f(-2)=f(0)=f(2), {[f(0)]}^2+{[f'(0)]}^2=4$.证明:
+      \[
+	 \exists\xi\in(-2, 2)\text{使}f(\xi)+f''(\xi)=0
+      \]
+   \item 已知$f(x)$在$[-1, 1]$有连续三阶导数.证明:
+      \[
+	 \exists\xi\in(-1, 1)\,\text{使}\,\frac{f'''(\xi)}{6}=\frac{f(1)-f(-1)}{2}-f'(0)
+      \]
+\end{enumerate}
+\end{document}
