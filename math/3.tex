@@ -1,0 +1,47 @@
+\documentclass[utf8]{ctexart}
+\pagestyle{headings}
+\markright{数学竞赛第三次辅导}
+\usepackage[a4paper,left=2.3cm,right=2.3cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{upgreek}
+\newcommand{\tk}[1][1.5]{\underline{\mbox{\hspace{#1 cm}}}}
+\newcommand{\abs}[1]{\lvert #1 \rvert}
+\DeclareMathOperator\diff{d\!}
+\newcommand{\e}{\mathrm{e}}
+\begin{document}
+\begin{enumerate}
+   \item $\int^1_{\e^{-n\uppi}}\abs{[\cos(\frac{1}{x})]'}\ln\frac{1}{x}\diff x$=\tk.
+   \item 设$f(x)=x,g(x)=\begin{cases}
+	 \sin x,&0\leqslant x\leqslant\frac{\uppi}{2}\\
+	 0,&x>\frac{\uppi}{2}
+      \end{cases}$.求$F(x)=\int^x_0f(t)g(x-t)\diff t$.
+   \item 设$f(x)$在$[0,\uppi]$连续,在$(0,\uppi)$可导,且$\int^\uppi_0f(x)\cos x\diff x=\int^\uppi_0f(x)\sin x\diff x=0$,证明:
+      \[
+	 \exists\xi\in(0,\uppi) f'(\xi)=0
+      \]
+   \item 设$f(x)=\int^x_{-1}t\abs{t}\diff t$,求曲线$y=f(x)$和$x$轴所围图形的面积.
+   \item 证明:
+      \[
+	 \forall\lambda\in\mathbb{R} \int^\frac{\uppi}{2}_0\frac{1}{1+\tan^\lambda x}\diff x=\int^\frac{\uppi}{2}_0\frac{1}{1+\cot^\lambda x}\diff x=\frac{\uppi}{4}
+      \]
+   \item 可微函数$f(x)$在$x>0$处有定义,其反函数$g(x)$满足$\int^{f(x)}_1g(t)\diff t=\frac13(x^{\frac32}-8)$.求$f(x)$.
+   \item $f(x)$在$(\-\infty,+\infty)$有界且导函数连续.$\forall x\in\mathbb{R},\abs{f(x)+f'(x)}\leqslant1$.证明$\abs{f(x)}\leqslant1$.
+   \item $f(x)$在$[-L,L]$连续,$x=0$处可导,$f'(0)\neq0$.
+      \begin{enumerate}
+	 \item 证明:
+	    \[
+	       \forall 0<x<L\exists0<\theta<1 \int^x_0f(t)\diff t+\int^{-x}_0f(t)\diff t=x[f(\theta x)-f(-\theta x)]
+	    \]
+	 \item 求$\lim\limits_{x\rightarrow 0^+}\theta$.
+      \end{enumerate}
+   \item 证明:
+      \[
+	 \int^\uppi_0xa^{\sin x}\diff x\int^\frac{\uppi}{2}_0a^{-\cos x}\diff x\geqslant\frac{\uppi^3}{4}
+      \]
+   \item 证明:
+      \[
+	 \int^\frac{\uppi}{2}_0\frac{\sin x}{1+x^2}\diff x\leqslant\int^\frac{\uppi}{2}_0\frac{\cos x}{1+x^2}\diff x
+      \]
+\end{enumerate}
+\end{document}
