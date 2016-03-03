@@ -52,13 +52,15 @@ void BUILD_HEAP(int *a,int n)
 
 void hsort(int *a,int n)
 {
-   if(n==1)
-      return;
    BUILD_HEAP(a,n);
-   int tmp=a[n-1];
-   a[n-1]=a[0];
-   a[0]=tmp;
-   hsort(a,n-1);
+   for(int i=n-1;i>=1;i--)
+   {
+      int tmp=a[i];
+      a[i]=a[0];
+      a[0]=tmp;
+      MAX_HEAP(a,0,i-1);
+   }
+   return;
 }
 
 int main(void)
