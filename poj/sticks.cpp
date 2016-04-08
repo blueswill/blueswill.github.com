@@ -27,7 +27,7 @@ bool dfs(int i,int left,int sum)
    {
       for(int j=i;j<n;j++)
       {
-	 if(sticks[j]==sticks[j-1]&&status[j-1]==0)
+	 if(sticks[j]==sticks[j-1]&&status[j-1]==0)//剪枝，重复元素较多
 	    continue;
 	 if(status[j]==0&&sticks[j]<=left)
 	 {
@@ -57,7 +57,6 @@ int main(void)
       for_each(sticks,sticks+n,[&max](int x){max=max>x?max:x;});
       int sum=0;
       for_each(sticks,sticks+n,[&sum](int x){sum+=x;});
-      cout<<sum<<endl;
       for(int i=max;i<=sum/2;i++)
       {
           length=i;

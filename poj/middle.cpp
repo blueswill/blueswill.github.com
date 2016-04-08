@@ -1,6 +1,7 @@
 /*get the answer of one math expression like 4*3*(12+13)=*/
 #include<iostream>
 #include<cstdlib>
+#include<cmath>
 using namespace std;
 int compare(char a,char b)
 {
@@ -17,6 +18,10 @@ int compare(char a,char b)
 	return -1;
     if(a!=')'&&b==')')
 	return 1;
+    if(a=='^')
+	return 0;
+    else if(b=='^')
+	return 1;
     int av,bv;
     if(a=='*'||a=='/')
 	av=2;
@@ -30,6 +35,8 @@ int compare(char a,char b)
 
 int merge(char a,int t1,int t2)
 {
+    if(a=='^')
+	return pow(t1,t2);
     if(a=='+')
 	return t1+t2;
     if(a=='-')
